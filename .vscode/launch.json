@@ -2,9 +2,25 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Quiz App (Chrome)",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/quiz-app",
+      "preLaunchTask": "Start Quiz App"
+    },
+    {
+      "type": "msedge",
+      "request": "launch",
+      "name": "Launch Quiz App (Edge)",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/quiz-app",
+      "preLaunchTask": "Start Quiz App"
+    },
+    {
       "type": "node",
       "request": "launch",
-      "name": "Run quiz-app",
+      "name": "Run quiz-app (Server Only)",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
       "cwd": "${workspaceFolder}/quiz-app",
